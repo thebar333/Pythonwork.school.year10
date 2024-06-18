@@ -1,0 +1,22 @@
+import time 
+def transport(): 
+    time.sleep(0.5) 
+    transport = input("Whats your favourite mode of transport?") 
+    print(f"Great! i also really like travelling by {transport}!") 
+ 
+plen = input("Whats ur favourtie plane? give you answer in ICAO codes like B744") 
+if plen == "B742" or plen == "B744" or plen == "B748": 
+    print("thinking...") 
+    time.sleep(2) 
+    print("Great Choice! I also really like the queen of the skies") 
+    transport() 
+elif plen == "A318": 
+    print("thinking...") 
+    time.sleep(2) 
+    print("Baby bus") 
+    transport() 
+else: 
+    print("thinking...") 
+    time.sleep(2) 
+    print("Great Choice") 
+    transport() 
